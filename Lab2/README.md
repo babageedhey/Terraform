@@ -1,0 +1,1 @@
+Creating a Simple EC2 intance with a security group to open port 22
