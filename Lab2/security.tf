@@ -1,6 +1,6 @@
-resource "aws_security_group" "allow_rdp" {
-  name        = "allow_rdp"
-  description = "Allow rdp traffic"
+resource "aws_security_group" "new_security_group" {
+  name        = "new_security_group"
+  description = "Allow traffic connetcion to port 22"
 
   ingress {
 
@@ -10,13 +10,4 @@ resource "aws_security_group" "allow_rdp" {
 
     cidr_blocks =  ["0.0.0.0/0"]
   }
-// Terraform removes the default rule
-
-  egress {
-   from_port = 0
-   to_port = 0
-   protocol = "-1"
-   cidr_blocks = ["0.0.0.0/0"]
- }
-
 }

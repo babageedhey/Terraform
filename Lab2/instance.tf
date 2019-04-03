@@ -1,14 +1,15 @@
 //instance.tf
 
 resource "aws_instance" "example" {
-  ami           = "ami-005bdb005fb00e791"
+  ami           = "ami-0ac019f4fcb7cb7e6"
   instance_type = "t2.micro"
-  key_name = "new_machine"
+  key_name = "geedhey"
 
-  security_groups = ["${aws_security_group.allow_rdp.name}"]
+
+  security_groups = ["${aws_security_group.new_security_group.name}"]
 
   tags {
-     Name = "Lab2"
+     Name = "Lab_2"
   }
 
 }
