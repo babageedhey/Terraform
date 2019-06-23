@@ -3,3 +3,4 @@ This Repo Consist of terraform Playground for various infrastructure, starting w
 all created using terraform.
 
 Lab1: Creating a Simple EC2 Instance using Terraform
+Lab2: Creating a Simple EC2 instance using Terraform and opening port 22 for ssh connection using the security group
